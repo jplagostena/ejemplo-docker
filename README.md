@@ -35,7 +35,9 @@ Copiamos un archivo de nuestra máquina local, a la imágen.
 #### WORKDIR
 Establecemos cuál es el directorio de trabajo para las operaciones subsiguientes. También es donde nos encontramos cuando entramos al contenedor.
 
-## Veamos qué hay adentro del contenedor
+## Construyamos la imágen y corramos un contenedor
+
+`docker build -t undav_app:latest .
 
 
 ## Referencias
