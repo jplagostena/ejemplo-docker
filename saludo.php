@@ -1,13 +1,29 @@
 <?php
+    $ip = $_SERVER['SERVER_ADDR'];
+?>
+<html>
+<head>
+<title>Saludador - UNDAV - Programación Distribuida II - <?= $ip ?></title>
+<link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+<?php
 
-echo "Hola.<br>Hoy es: ".date("d/m/Y");
+echo "Hola!<br><br>Hoy es: ".date("d/m/Y h:i");
 
 echo "<br>";
+echo "Server IP: $ip<br>";
+echo "<br>Headers<br><br>";
 
-$ip = $_SERVER['SERVER_ADDR'];
-
-echo "Server IP: $ip"
+foreach (getallheaders() as $nombre => $valor) {
+    echo "$nombre: $valor<br>";
+}
 
 ?>
+
+</body>
+</html>
+
+
 
 
