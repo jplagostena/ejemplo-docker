@@ -1,4 +1,4 @@
-# Ejemplo Docker - UNDAV
+# Ejemplo Docker
 
 ## Dockerfile
 Antes que nada, veamos como quedó el archivo
@@ -39,11 +39,11 @@ Establecemos cuál es el directorio de trabajo para las operaciones subsiguiente
 
 Con el comando build construimos la imágen. El -t indica que tag le queremos poner.
 
-`docker build -t undav_app:latest .`
+`docker build -t primer_ejemplo:0.1 .`
 
 Una vez que la imágen ya está construida, ya podemos correr un container de esa imágen.
 
-`docker run -v $PWD:/app -p 80:80 --name undav undav_app:latest`
+`docker run -v $PWD:/app -p 80:80 --name primer_ejemplo_container primer_ejemplo:0.1`
 
 ¿Y todas esas opciones?
 Suponiendo que ya está todo, ¿cómo veo la página de saludo.php en mi browser?
