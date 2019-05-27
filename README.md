@@ -37,6 +37,10 @@ Establecemos cuál es el directorio de trabajo para las operaciones subsiguiente
 
 ## Construyamos la imágen y corramos un contenedor
 
+Primero vamos al directorio *imagen*
+
+`cd imagen`
+
 Con el comando build construimos la imágen. El -t indica que tag le queremos poner.
 
 `docker build -t primer_ejemplo:0.1 .`
